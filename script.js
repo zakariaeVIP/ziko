@@ -1,4 +1,4 @@
-let timerText = document.getElementById('timer');
+let timerText = document.getElementById('time');
 let inputArea = document.getElementById('input-area');
 let startButton = document.getElementById('start-button');
 let result = document.getElementById('result');
@@ -46,8 +46,9 @@ function endTest(success) {
     isTestStarted = false;
     let wordsTyped = inputArea.value.split(' ').length;
     if (success) {
-        result.innerText = `Congratulations! You completed the test. Your speed is ${wordsTyped} words per minute.`;
+        result.innerText = `Great job! Your typing speed is ${wordsTyped} words per minute.`;
     } else {
-        result.innerText = `Time's up! Your speed is ${wordsTyped} words per minute.`;
+        result.innerText = `Time's up! You typed ${wordsTyped} words per minute.`;
     }
 }
+
