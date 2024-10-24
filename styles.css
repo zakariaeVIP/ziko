@@ -4,17 +4,21 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1e90ff, #00bcd4);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('https://images.unsplash.com/photo-1542281286-9e0a16bb7366?fit=crop&w=1400&q=80') no-repeat center center/cover;
 }
 
 /* Conteneur principal */
 .container {
     text-align: center;
     color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 /* Titre principal */
@@ -34,7 +38,10 @@ h1 {
 
 /* Boutons personnalisés */
 .custom-button {
-    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.85);
     color: #1e90ff;
     text-decoration: none;
     padding: 15px;
@@ -44,9 +51,14 @@ h1 {
     border-radius: 30px;
     transition: transform 0.3s ease, background-color 0.3s;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    gap: 10px;
 }
 
-/* Effet au survol */
+/* Icônes et effet au survol */
+.custom-button i {
+    font-size: 1.5rem;
+}
+
 .custom-button:hover {
     background-color: #1e90ff;
     color: #fff;
